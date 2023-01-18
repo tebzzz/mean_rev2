@@ -1,0 +1,203 @@
+body{
+    background-color: rgb(233, 238, 241);
+    font-family: 'Courier New', Courier, monospace;
+    min-width: 1000px;
+    min-height: 700px;
+}
+
+.port-overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    text-align: center;
+    margin: 0px;
+    width: auto;
+    font-size: 30px;
+}
+
+
+.title-container{
+    background-color: white;
+    width: auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid #2b3c08;
+}
+
+
+.equity-title{
+    margin-bottom: 0px;
+    margin-top: 30px
+}
+
+
+.kpi-containers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.kpi-box{
+    background-color: white;
+    margin: 30px;
+    border: 1px solid #2b3c08;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width:max-content
+}
+
+
+.kpi-name-container{
+    padding: 30px;
+    padding-bottom: 15px;
+    border-top-right-radius: 14px;
+    border-top-left-radius: 14px;
+    background-color: rgb(228, 228, 228);
+}
+
+
+.kpi-name{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(41, 41, 41);
+    margin: 0px;
+}
+
+.kpi-value{
+    font-size: 23px;
+}
+
+
+.sep-line{
+    width: 98vw;
+    color: black;
+}
+
+.table-container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 5px;
+    width: 50%;
+    min-width: 500px;
+    max-height: 1000px;
+    overflow-y: scroll;
+    border: 1px solid #2b3c08;
+}
+
+.pair{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, calc(100%/2));
+    grid-template-rows: repeat(4, 49vh);
+}
+
+
+.outer-container{
+    margin: 15px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 6px;
+    border: 1px solid #2b3c08;
+    overflow: auto;
+    min-height: 200px;
+    position: relative;
+}
+
+
+.title-div{
+    height: 12%;
+}
+
+.content-div{
+    height: 88%;
+}
+
+
+.outer-container h1,.outer-container h2,.outer-container h3,.outer-container h4,.outer-container p{
+    margin: 0px;
+}
+
+
+.dash-graph{
+    height: 100%;
+}
+
+.outer-container > div.maximised .fa {
+    z-index: 100;
+    top: 10px;
+    left: 10px;
+    font-size: x-large;
+    cursor: zoom-out;
+  }
+.main > div .fa {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: zoom-in;
+}
+
+
+.main > div.maximised {
+    position: fixed;
+    height: calc(90vh - 10px);
+    width: calc(90vw - 10px);
+    margin: 0;
+    padding: 5px;
+    top: 50%;
+    left: 50%;
+    margin-top: -45vh;
+    margin-left: -45vw;
+    background-color: #ffffffe7;
+    z-index: 400;
+    backdrop-filter: blur(1px);
+}
+.main > div.maximised .fa {
+    z-index: 401;
+    top: 10px;
+    left: 10px;
+    font-size: x-large;
+    cursor: zoom-out;
+}
+
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color:#2b3c08 grey;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff00;
+    border-radius:5px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 5px;
+    /* border: 3px solid #2b3c08; */
+}
